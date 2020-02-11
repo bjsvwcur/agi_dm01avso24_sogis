@@ -26,8 +26,8 @@ ENV Variablen auf die "Container"-DB setzen:
 
 mit ili2pg_4.3.1 Daten importieren (Verzeichnis zu ili2pg im File ili2pg_dataimportEdit_X.sh anpassen):
 ```
-cd ./
-./ili2pg_dataimportEdit_dm01avso24.sh
+./ili2pg_dataimportEdit_dm01avso24_2493.sh
+./ili2pg_dataimportEdit_dm01avso24_2499.sh
 psql -h localhost -p 54322 -d pub -U admin -c "SET ROLE admin" --single-transaction -f av_avdpool_ng.dump
 ```
 
