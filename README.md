@@ -32,5 +32,5 @@ cd ./
 
 Daten von der Edit-DB in die Pub-DB kopieren
 ```
---  sudo -E $PWD/start-gretl.sh --docker-image sogis/gretl-runtime:latest --docker-network agiavabgleich_default --job-directory $PWD/arp_nutzungsvereinbarung_pub/
+--  sudo -E $PWD/start-gretl.sh --docker-image sogis/gretl-runtime:latest --docker-network agidm01avso24sogis_default --job-directory $PWD/arp_nutzungsvereinbarung_pub/
   ```
