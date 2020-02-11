@@ -1,12 +1,12 @@
-# arp_nutzungsvereinbarung
-Create Schema und Import Daten der Nutzungsvereinbarung
+# agi_dm01avso24_sogis 
+Create Schema und Import Daten der AV
 
 Git clonen:
 ```
   git clone https://github.com/bjsvwcur/arp_nutzungsvereinbarung.git
 ```
 
-Docker Container erstellen mit 2 PostgreSQL DBs edit und Pub. Inkl. Schema arp_nutzungsvereinbarung in beiden DBs.
+Docker Container erstellen mit 2 PostgreSQL DBs edit und Pub. Inkl. Schema agi_dm01avso24_sogis in beiden DBs.
 
 ```
   docker-compose down # (this command is optional; it's just for cleaning up any already existing DB containers)
