@@ -33,5 +33,5 @@ psql -h localhost -p 54322 -d pub -U admin -c "SET ROLE admin" --single-transact
 
 Daten von der Edit-DB in die Pub-DB kopieren
 ```
---  sudo -E $PWD/start-gretl.sh --docker-image sogis/gretl-runtime:latest --docker-network agidm01avso24sogis_default --job-directory $PWD/arp_nutzungsvereinbarung_pub/
+--  sudo -E $PWD/start-gretl.sh --docker-image sogis/gretl-runtime:latest --docker-network agidm01avso24sogis_default --job-directory $PWD/agi_dm01avso24_sogis/
   ```
