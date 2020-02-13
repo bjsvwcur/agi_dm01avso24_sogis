@@ -5,13 +5,55 @@ apply plugin: 'ch.so.agi.gretl'
 
 description = "GRETL-Job für Datenumbau der Nutzungsvereinbarungsdaten von der sogis-DB in die pub-DB"
 
-defaultTasks 'transferArpNutzungsvereinbarung'
+defaultTasks 'transferavdpool'
 
-task transferArpNutzungsvereinbarung(type: Db2Db){
+task transferavdpool(type: Db2Db){
     sourceDb = [dbUriEdit, dbUserEdit, dbPwdEdit]
     targetDb = [dbUriPub, dbUserPub, dbPwdPub]
     transferSets = [
-            new TransferSet('arp_nutzungsvereinbarung_pub_nutzungsvrnbrngen_nutzungsvreinbarungen.sql',
-                    'arp_nutzungsvereinbarung_pub.nutzungsvrnbrngen_nutzungsvereinbarungen', true)
+            new TransferSet('agi_dm01avso24_bezirksgrenzen_bezirksgrenzabschnitt.sql','av_avdpool_ng.bezirksgrenzen_bezirksgrenzabschnitt', true),
+            new TransferSet('agi_dm01avso24_bodenbedeckung_bbnachfuehrung.sql','av_avdpool_ng.bodenbedeckung_bbnachfuehrung', true),
+            new TransferSet('agi_dm01avso24_bodenbedeckung_boflaeche.sql','av_avdpool_ng.bodenbedeckung_boflaeche', true),
+            new TransferSet('agi_dm01avso24_bodenbedeckung_boflaechesymbol.sql','av_avdpool_ng.bodenbedeckung_boflaechesymbol', true),
+            new TransferSet('agi_dm01avso24_bodenbedeckung_einzelpunkt.sql','av_avdpool_ng.bodenbedeckung_einzelpunkt', true),
+            new TransferSet('agi_dm01avso24_bodenbedeckung_einzelpunktpos.sql','av_avdpool_ng.bodenbedeckung_einzelpunktpos', true),
+            new TransferSet('agi_dm01avso24_bodenbedeckung_gebaeudenummer.sql','av_avdpool_ng.bodenbedeckung_gebaeudenummer', true),
+            new TransferSet('agi_dm01avso24_bodenbedeckung_gebaeudenummerpos.sql','av_avdpool_ng.bodenbedeckung_gebaeudenummerpos', true),
+            new TransferSet('agi_dm01avso24_bodenbedeckung_objektname.sql','av_avdpool_ng.bodenbedeckung_objektname', true),
+            new TransferSet('agi_dm01avso24_bodenbedeckung_objektnamepos.sql','av_avdpool_ng.bodenbedeckung_objektnamepos', true),
+            new TransferSet('agi_dm01avso24_bodenbedeckung_projboflaeche.sql','av_avdpool_ng.bodenbedeckung_projboflaeche', true),
+            new TransferSet('agi_dm01avso24_bodenbedeckung_projboflaechesymbol.sql','av_avdpool_ng.bodenbedeckung_projboflaechesymbol', true),
+            new TransferSet('agi_dm01avso24_bodenbedeckung_objektname.sql','av_avdpool_ng.bodenbedeckung_objektname', true),
+            new TransferSet('agi_dm01avso24_bodenbedeckung_projgebaeudenummer.sql','av_avdpool_ng.bodenbedeckung_projgebaeudenummer', true),
+            new TransferSet('agi_dm01avso24_bodenbedeckung_projgebaeudenummerpos.sql','av_avdpool_ng.bodenbedeckung_projgebaeudenummerpos', true),
+            new TransferSet('agi_dm01avso24_bodenbedeckung_projobjektname.sql','av_avdpool_ng.bodenbedeckung_projobjektname', true),
+            new TransferSet('agi_dm01avso24_bodenbedeckung_projobjektnamepos.sql','av_avdpOol_ng.bodenbedeckung_projobjektnamepos', true),
+            new TransferSet('agi_dm01avso24_einzelobjekte_einzelobjekt.sql','av_avdpool_ng.einzelobjekte_einzelobjekt', true),
+            new TransferSet('agi_dm01avso24_einzelobjekte_einzelpunkt.sql','av_avdpool_ng.einzelobjekte_einzelpunkt', true),
+            new TransferSet('agi_dm01avso24_einzelobjekte_einzelpunktpos.sql','av_avdpool_ng.einzelobjekte_einzelpunktpos', true),
+            new TransferSet('agi_dm01avso24_einzelobjekte_eonachfuehrung.sql','av_avdpool_ng.einzelobjekte_eonachfuehrung', true),
+            new TransferSet('agi_dm01avso24_einzelobjekte_flaechenelement.sql','av_avdpool_ng.einzelobjekte_flaechenelement', true),
+            new TransferSet('agi_dm01avso24_einzelobjekte_flaechenelementsymbol.sql','av_avdpool_ng.einzelobjekte_flaechenelementsymbol', true),
+            new TransferSet('agi_dm01avso24_einzelobjekte_linienelement.sql','av_avdpool_ng.einzelobjekte_linienelement', true),
+            new TransferSet('agi_dm01avso24_einzelobjekte_linienelementsymbol.sql','av_avdpool_ng.einzelobjekte_linienelementsymbol', true),
+            new TransferSet('agi_dm01avso24_einzelobjekte_objektname.sql','av_avdpool_ng.einzelobjekte_objektname', true),
+            new TransferSet('agi_dm01avso24_einzelobjekte_objektnamepos.sql','av_avdpool_ng.einzelobjekte_objektnamepos', true),
+            new TransferSet('agi_dm01avso24_einzelobjekte_objektnummer.sql','av_avdpool_ng.einzelobjekte_objektnummer', true),
+            new TransferSet('agi_dm01avso24_einzelobjekte_objektnummerpos.sql','av_avdpool_ng.einzelobjekte_objektnummerpos', true),
+            new TransferSet('agi_dm01avso24_einzelobjekte_punktelement.sql','av_avdpool_ng.einzelobjekte_punktelement', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie1_hfp1.sql','av_avdpool_ng.fixpunktekategorie1_hfp1', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie1_hfp1nachfuehrung.sql','av_avdpool_ng.fixpunktekategorie1_hfp1nachfuehrung', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie1_hfp1pos.sql','av_avdpool_ng.fixpunktekategorie1_hfp1pos', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie1_lfp1.sql','av_avdpool_ng.fixpunktekategorie1_lfp1', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie1_lfp1nachfuehrung.sql','av_avdpool_ng.fixpunktekategorie1_lfp1nachfuehrung', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie1_lfp1pos.sql','av_avdpool_ng.fixpunktekategorie1_lfp1pos', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie1_lfp1symbol.sql','av_avdpool_ng.fixpunktekategorie1_lfp1symbol', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie2_hfp2.sql','av_avdpool_ng.fixpunktekategorie2_hfp2', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie2_hfp2nachfuehrung.sql','av_avdpool_ng.fixpunktekategorie2_hfp2nachfuehrung', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie2_hfp2pos.sql','av_avdpool_ng.fixpunktekategorie2_hfp2pos', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie2_lfp2.sql','av_avdpool_ng.fixpunktekategorie2_lfp2', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie2_lfp2nachfuehrung.sql','av_avdpool_ng.fixpunktekategorie2_lfp2nachfuehrung', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie2_lfp2pos.sql','av_avdpool_ng.fixpunktekategorie2_lfp2pos', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie2_lfp2symbol.sql','av_avdpool_ng.fixpunktekategorie2_lfp2symbol', true)
     ]
 }
