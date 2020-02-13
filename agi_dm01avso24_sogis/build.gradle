@@ -3,7 +3,7 @@ import ch.so.agi.gretl.api.TransferSet
 
 apply plugin: 'ch.so.agi.gretl'
 
-description = "GRETL-Job für Datenumbau der Nutzungsvereinbarungsdaten von der sogis-DB in die pub-DB"
+description = "GRETL-Job für Datenumbau der amtlichen Vermessung von der edit-DB in die sogis-DB"
 
 defaultTasks 'transferavdpool'
 
@@ -54,7 +54,18 @@ task transferavdpool(type: Db2Db){
             new TransferSet('agi_dm01avso24_fixpunktekategorie2_lfp2.sql','av_avdpool_ng.fixpunktekategorie2_lfp2', true),
             new TransferSet('agi_dm01avso24_fixpunktekategorie2_lfp2nachfuehrung.sql','av_avdpool_ng.fixpunktekategorie2_lfp2nachfuehrung', true),
             new TransferSet('agi_dm01avso24_fixpunktekategorie2_lfp2pos.sql','av_avdpool_ng.fixpunktekategorie2_lfp2pos', true),
-            new TransferSet('agi_dm01avso24_fixpunktekategorie2_lfp2symbol.sql','av_avdpool_ng.fixpunktekategorie2_lfp2symbol', true)
+            new TransferSet('agi_dm01avso24_fixpunktekategorie2_lfp2symbol.sql','av_avdpool_ng.fixpunktekategorie2_lfp2symbol', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie3_hfp3.sql','av_avdpool_ng.fixpunktekategorie3_hfp3', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie3_hfp3nachfuehrung.sql','av_avdpool_ng.fixpunktekategorie3_hfp3nachfuehrung', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie3_hfp3pos.sql','av_avdpool_ng.fixpunktekategorie3_hfp3pos', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie3_hilfsfixpunkt.sql','av_avdpool_ng.fixpunktekategorie3_hilfsfixpunkt', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie3_hilfsfixpunktpos.sql','av_avdpool_ng.fixpunktekategorie3_hilfsfixpunktpos', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie3_hilfsfixpunktsymbol.sql','av_avdpool_ng.fixpunktekategorie3_hilfsfixpunktsymbol', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie3_hilfsfpnachfuehrung.sql','av_avdpool_ng.fixpunktekategorie3_hilfsfpnachfuehrung', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie3_lfp3.sql','av_avdpool_ng.fixpunktekategorie3_lfp3', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie3_lfp3nachfuehrung.sql','av_avdpool_ng.fixpunktekategorie3_lfp3nachfuehrung', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie3_lfp3pos.sql','av_avdpool_ng.fixpunktekategorie3_lfp3pos', true),
+            new TransferSet('agi_dm01avso24_fixpunktekategorie3_lfp3symbol.sql','av_avdpool_ng.fixpunktekategorie3_lfp3symbol', true)
     ]
 }
 
