@@ -57,3 +57,4 @@ task transferavdpool(type: Db2Db){
             new TransferSet('agi_dm01avso24_fixpunktekategorie2_lfp2symbol.sql','av_avdpool_ng.fixpunktekategorie2_lfp2symbol', true)
     ]
 }
+
