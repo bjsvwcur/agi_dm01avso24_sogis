@@ -86,8 +86,22 @@ task transferavdpool(type: Db2Db){
             new TransferSet('agi_dm01avso24_hoehen_aussparung.sql','av_avdpool_ng.hoehen_aussparung', true),
             new TransferSet('agi_dm01avso24_hoehen_gelaendekante.sql','av_avdpool_ng.hoehen_gelaendekante', true),
             new TransferSet('agi_dm01avso24_hoehen_hoehenpunkt.sql','av_avdpool_ng.hoehen_hoehenpunkt', true),
-            new TransferSet('agi_dm01avso24_hoehen_hoehenpunktpos.sql','av_avdpool_ng.hoehen_hoehenpunktpos', true),
-            new TransferSet('agi_dm01avso24_hoehen_honachfuehrung.sql','av_avdpool_ng.hoehen_honachfuehrung', true)
+            new TransferSet('agi_dm01avso24_kantonsgrenzen_kantonsgrenzabschnitt.sql','av_avdpool_ng.kantonsgrenzen_kantonsgrenzabschnitt', true),
+            new TransferSet('agi_dm01avso24_landesgrenzen_landesgrenzabschnitt.sql','av_avdpool_ng.landesgrenzen_landesgrenzabschnitt', true),
+            new TransferSet('agi_dm01avso24_liegenschaften_bergwerk.sql','av_avdpool_ng.liegenschaften_bergwerk', true),
+            new TransferSet('agi_dm01avso24_liegenschaften_grenzpunkt.sql','av_avdpool_ng.liegenschaften_grenzpunkt', true),
+            new TransferSet('agi_dm01avso24_liegenschaften_grenzpunktpos.sql','av_avdpool_ng.liegenschaften_grenzpunktpos', true),
+            new TransferSet('agi_dm01avso24_liegenschaften_grenzpunktsymbol.sql','av_avdpool_ng.liegenschaften_grenzpunktsymbol', true),
+            new TransferSet('agi_dm01avso24_liegenschaften_grundstueck.sql','av_avdpool_ng.liegenschaften_grundstueck', true),
+            new TransferSet('agi_dm01avso24_liegenschaften_grundstueckpos.sql','av_avdpool_ng.liegenschaften_grundstueckpos', true),
+            new TransferSet('agi_dm01avso24_liegenschaften_liegenschaft.sql','av_avdpool_ng.liegenschaften_liegenschaft', true),
+            new TransferSet('agi_dm01avso24_liegenschaften_lsnachfuehrung.sql','av_avdpool_ng.liegenschaften_lsnachfuehrung', true),
+            new TransferSet('agi_dm01avso24_liegenschaften_projbergwerk.sql','av_avdpool_ng.liegenschaften_projbergwerk', true),
+            new TransferSet('agi_dm01avso24_liegenschaften_projgrundstueck.sql','av_avdpool_ng.liegenschaften_projgrundstueck', true),
+            new TransferSet('agi_dm01avso24_liegenschaften_projgrundstueckpos.sql','av_avdpool_ng.liegenschaften_projgrundstueckpos', true),
+            new TransferSet('agi_dm01avso24_liegenschaften_projliegenschaft.sql','av_avdpool_ng.liegenschaften_projliegenschaft', true),
+            new TransferSet('agi_dm01avso24_liegenschaften_projselbstrecht.sql','av_avdpool_ng.liegenschaften_projselbstrecht', true),
+            new TransferSet('agi_dm01avso24_liegenschaften_selbstrecht.sql','av_avdpool_ng.liegenschaften_selbstrecht', true)
    ]
 }
 
