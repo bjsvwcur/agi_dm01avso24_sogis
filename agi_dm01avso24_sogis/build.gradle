@@ -65,7 +65,18 @@ task transferavdpool(type: Db2Db){
             new TransferSet('agi_dm01avso24_fixpunktekategorie3_lfp3.sql','av_avdpool_ng.fixpunktekategorie3_lfp3', true),
             new TransferSet('agi_dm01avso24_fixpunktekategorie3_lfp3nachfuehrung.sql','av_avdpool_ng.fixpunktekategorie3_lfp3nachfuehrung', true),
             new TransferSet('agi_dm01avso24_fixpunktekategorie3_lfp3pos.sql','av_avdpool_ng.fixpunktekategorie3_lfp3pos', true),
-            new TransferSet('agi_dm01avso24_fixpunktekategorie3_lfp3symbol.sql','av_avdpool_ng.fixpunktekategorie3_lfp3symbol', true)
-    ]
+            new TransferSet('agi_dm01avso24_fixpunktekategorie3_lfp3symbol.sql','av_avdpool_ng.fixpunktekategorie3_lfp3symbol', true),
+            new TransferSet('agi_dm01avso24_gebaeudeadressen_benanntesgebiet.sql','av_avdpool_ng.gebaeudeadressen_benanntesgebiet', true),
+            new TransferSet('agi_dm01avso24_gebaeudeadressen_gebaeudebeschreibung.sql','av_avdpool_ng.gebaeudeadressen_gebaeudebeschreibung', true),
+            new TransferSet('agi_dm01avso24_gebaeudeadressen_gebaeudeeingang.sql','av_avdpool_ng.gebaeudeadressen_gebaeudeeingang', true),
+            new TransferSet('agi_dm01avso24_gebaeudeadressen_gebaeudename.sql','av_avdpool_ng.gebaeudeadressen_gebaeudename', true),
+            new TransferSet('agi_dm01avso24_gebaeudeadressen_gebaeudenamepos.sql','av_avdpool_ng.gebaeudeadressen_gebaeudenamepos', true),
+            new TransferSet('agi_dm01avso24_gebaeudeadressen_gebnachfuehrung.sql','av_avdpool_ng.gebaeudeadressen_gebnachfuehrung', true),
+            new TransferSet('agi_dm01avso24_gebaeudeadressen_hausnummerpos.sql','av_avdpool_ng.gebaeudeadressen_hausnummerpos', true),
+            new TransferSet('agi_dm01avso24_gebaeudeadressen_lokalisation.sql','av_avdpool_ng.gebaeudeadressen_lokalisation', true),
+            new TransferSet('agi_dm01avso24_gebaeudeadressen_lokalisationsname.sql','av_avdpool_ng.gebaeudeadressen_lokalisationsname', true),
+            new TransferSet('agi_dm01avso24_gebaeudeadressen_lokalisationsnamepos.sql','av_avdpool_ng.gebaeudeadressen_lokalisationsnamepos', true),
+            new TransferSet('agi_dm01avso24_gebaeudeadressen_strassenstueck.sql','av_avdpool_ng.gebaeudeadressen_strassenstueck', true)
+   ]
 }
 
