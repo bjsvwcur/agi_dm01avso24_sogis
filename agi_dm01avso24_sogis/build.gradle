@@ -76,7 +76,18 @@ task transferavdpool(type: Db2Db){
             new TransferSet('agi_dm01avso24_gebaeudeadressen_lokalisation.sql','av_avdpool_ng.gebaeudeadressen_lokalisation', true),
             new TransferSet('agi_dm01avso24_gebaeudeadressen_lokalisationsname.sql','av_avdpool_ng.gebaeudeadressen_lokalisationsname', true),
             new TransferSet('agi_dm01avso24_gebaeudeadressen_lokalisationsnamepos.sql','av_avdpool_ng.gebaeudeadressen_lokalisationsnamepos', true),
-            new TransferSet('agi_dm01avso24_gebaeudeadressen_strassenstueck.sql','av_avdpool_ng.gebaeudeadressen_strassenstueck', true)
+            new TransferSet('agi_dm01avso24_gemeindegrenzen_gemeinde.sql','av_avdpool_ng.gemeindegrenzen_gemeinde', true),
+            new TransferSet('agi_dm01avso24_gemeindegrenzen_gemeindegrenze.sql','av_avdpool_ng.gemeindegrenzen_gemeindegrenze', true),
+            new TransferSet('agi_dm01avso24_gemeindegrenzen_gemnachfuehrung.sql','av_avdpool_ng.gemeindegrenzen_gemnachfuehrung', true),
+            new TransferSet('agi_dm01avso24_gemeindegrenzen_hoheitsgrenzpunkt.sql','av_avdpool_ng.gemeindegrenzen_hoheitsgrenzpunkt', true),
+            new TransferSet('agi_dm01avso24_gemeindegrenzen_hoheitsgrenzpunktsymbol.sql','av_avdpool_ng.gemeindegrenzen_hoheitsgrenzpunktsymbol', true),
+            new TransferSet('agi_dm01avso24_gemeindegrenzen_hoheitsgrenzpunktpos.sql','av_avdpool_ng.gemeindegrenzen_hoheitsgrenzpunktpos', true),
+            new TransferSet('agi_dm01avso24_gemeindegrenzen_projgemeindegrenze.sql','av_avdpool_ng.gemeindegrenzen_projgemeindegrenze', true),
+            new TransferSet('agi_dm01avso24_hoehen_aussparung.sql','av_avdpool_ng.hoehen_aussparung', true),
+            new TransferSet('agi_dm01avso24_hoehen_gelaendekante.sql','av_avdpool_ng.hoehen_gelaendekante', true),
+            new TransferSet('agi_dm01avso24_hoehen_hoehenpunkt.sql','av_avdpool_ng.hoehen_hoehenpunkt', true),
+            new TransferSet('agi_dm01avso24_hoehen_hoehenpunktpos.sql','av_avdpool_ng.hoehen_hoehenpunktpos', true),
+            new TransferSet('agi_dm01avso24_hoehen_honachfuehrung.sql','av_avdpool_ng.hoehen_honachfuehrung', true)
    ]
 }
 
