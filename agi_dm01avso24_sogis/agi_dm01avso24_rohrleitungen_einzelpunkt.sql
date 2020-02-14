@@ -12,12 +12,12 @@ SELECT
     0 AS los,
     aimport.importdate AS lieferdatum
 FROM
-    agi_dm01avso24.bodenbedeckung_einzelpunkt AS einzelpunkt
+    agi_dm01avso24.rohrleitungen_einzelpunkt AS einzelpunkt
     LEFT JOIN agi_dm01avso24.t_ili2db_basket AS basket
         ON einzelpunkt.t_basket = basket.t_id
     LEFT JOIN agi_dm01avso24.zuverlaessigkeit AS lagezuv
         ON einzelpunkt.lagezuv = lagezuv.ilicode
-    LEFT JOIN agi_dm01avso24.bodenbedeckung_einzelpunkt_exaktdefiniert AS exaktdefiniert
+    LEFT JOIN agi_dm01avso24.rohrleitungen_einzelpunkt_exaktdefiniert AS exaktdefiniert
         ON einzelpunkt.lagezuv = exaktdefiniert.ilicode
     LEFT JOIN 
     (

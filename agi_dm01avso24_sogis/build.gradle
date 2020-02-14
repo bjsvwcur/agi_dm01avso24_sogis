@@ -3,7 +3,7 @@ import ch.so.agi.gretl.api.TransferSet
 
 apply plugin: 'ch.so.agi.gretl'
 
-description = "GRETL-Job für Datenumbau der amtlichen Vermessung von der edit-DB in die sogis-DB"
+description = "GRETL-Job für Datenumbau der amtlichen Vermessung von der edit-DB in die sogis-DB. Die Tabellen planrahmen_* und liegenschaften_lineattr* werden nicht in die sogis-DB geschrieben."
 
 defaultTasks 'transferavdpool'
 
@@ -101,7 +101,42 @@ task transferavdpool(type: Db2Db){
             new TransferSet('agi_dm01avso24_liegenschaften_projgrundstueckpos.sql','av_avdpool_ng.liegenschaften_projgrundstueckpos', true),
             new TransferSet('agi_dm01avso24_liegenschaften_projliegenschaft.sql','av_avdpool_ng.liegenschaften_projliegenschaft', true),
             new TransferSet('agi_dm01avso24_liegenschaften_projselbstrecht.sql','av_avdpool_ng.liegenschaften_projselbstrecht', true),
-            new TransferSet('agi_dm01avso24_liegenschaften_selbstrecht.sql','av_avdpool_ng.liegenschaften_selbstrecht', true)
-   ]
+            new TransferSet('agi_dm01avso24_liegenschaften_selbstrecht.sql','av_avdpool_ng.liegenschaften_selbstrecht', true),
+            new TransferSet('agi_dm01avso24_nomenklatur_flurname.sql','av_avdpool_ng.nomenklatur_flurname', true),
+            new TransferSet('agi_dm01avso24_nomenklatur_flurnamepos.sql','av_avdpool_ng.nomenklatur_flurnamepos', true),
+            new TransferSet('agi_dm01avso24_nomenklatur_gelaendename.sql','av_avdpool_ng.nomenklatur_gelaendename', true),
+            new TransferSet('agi_dm01avso24_nomenklatur_gelaendenamepos.sql','av_avdpool_ng.nomenklatur_gelaendenamepos', true),
+            new TransferSet('agi_dm01avso24_nomenklatur_nknachfuehrung.sql','av_avdpool_ng.nomenklatur_nknachfuehrung', true),
+            new TransferSet('agi_dm01avso24_nomenklatur_ortsname.sql','av_avdpool_ng.nomenklatur_ortsname', true),
+            new TransferSet('agi_dm01avso24_nomenklatur_ortsnamepos.sql','av_avdpool_ng.nomenklatur_ortsnamepos', true),
+            new TransferSet('agi_dm01avso24_nummerierungsbereiche_nbgeometrie.sql','av_avdpool_ng.nummerierungsbereiche_nbgeometrie', true),
+            new TransferSet('agi_dm01avso24_nummerierungsbereiche_nummerierungsbereich.sql','av_avdpool_ng.nummerierungsbereiche_nummerierungsbereich', true),
+            new TransferSet('agi_dm01avso24_nummerierungsbereiche_nummerierungsbereichpos.sql','av_avdpool_ng.nummerierungsbereiche_nummerierungsbereichpos', true),
+            new TransferSet('agi_dm01avso24_planeinteilungen_plan.sql','av_avdpool_ng.planeinteilungen_plan', true),
+            new TransferSet('agi_dm01avso24_planeinteilungen_plangeometrie.sql','av_avdpool_ng.planeinteilungen_plangeometrie', true),
+            new TransferSet('agi_dm01avso24_planeinteilungen_planpos.sql','av_avdpool_ng.planeinteilungen_planpos', true),
+            new TransferSet('agi_dm01avso24_plzortschaft_ortschaft.sql','av_avdpool_ng.plzortschaft_ortschaft', true),
+            new TransferSet('agi_dm01avso24_plzortschaft_ortschaftsname.sql','av_avdpool_ng.plzortschaft_ortschaftsname', true),
+            new TransferSet('agi_dm01avso24_plzortschaft_ortschaftsname_pos.sql','av_avdpool_ng.plzortschaft_ortschaftsname_pos', true),
+            new TransferSet('agi_dm01avso24_plzortschaft_ortschaftsverbund.sql','av_avdpool_ng.plzortschaft_ortschaftsverbund', true),
+            new TransferSet('agi_dm01avso24_plzortschaft_ortschaftsverbundtext.sql','av_avdpool_ng.plzortschaft_ortschaftsverbundtext', true),
+            new TransferSet('agi_dm01avso24_plzortschaft_osnachfuehrung.sql','av_avdpool_ng.plzortschaft_osnachfuehrung', true),
+            new TransferSet('agi_dm01avso24_plzortschaft_plz6.sql','av_avdpool_ng.plzortschaft_plz6', true),
+            new TransferSet('agi_dm01avso24_plzortschaft_plz6nachfuehrung.sql','av_avdpool_ng.plzortschaft_plz6nachfuehrung', true),
+            new TransferSet('agi_dm01avso24_rohrleitungen_einzelpunkt.sql','av_avdpool_ng.rohrleitungen_einzelpunkt', true),
+            new TransferSet('agi_dm01avso24_rohrleitungen_einzelpunktpos.sql','av_avdpool_ng.rohrleitungen_einzelpunktpos', true),
+            new TransferSet('agi_dm01avso24_rohrleitungen_flaechenelement.sql','av_avdpool_ng.rohrleitungen_flaechenelement', true),
+            new TransferSet('agi_dm01avso24_rohrleitungen_leitungsobjekt.sql','av_avdpool_ng.rohrleitungen_leitungsobjekt', true),
+            new TransferSet('agi_dm01avso24_rohrleitungen_leitungsobjektpos.sql','av_avdpool_ng.rohrleitungen_leitungsobjektpos', true),
+            new TransferSet('agi_dm01avso24_rohrleitungen_linienelement.sql','av_avdpool_ng.rohrleitungen_linienelement', true),
+            new TransferSet('agi_dm01avso24_rohrleitungen_punktelement.sql','av_avdpool_ng.rohrleitungen_punktelement', true),
+            new TransferSet('agi_dm01avso24_rohrleitungen_rlnachfuehrung.sql','av_avdpool_ng.rohrleitungen_rlnachfuehrung', true),
+            new TransferSet('agi_dm01avso24_rohrleitungen_signalpunkt.sql','av_avdpool_ng.rohrleitungen_signalpunkt', true),
+            new TransferSet('agi_dm01avso24_rohrleitungen_signalpunktpos.sql','av_avdpool_ng.rohrleitungen_signalpunktpos', true),
+            new TransferSet('agi_dm01avso24_rutschgebiete_rutschung.sql','av_avdpool_ng.rutschgebiete_rutschung', true),
+            new TransferSet('agi_dm01avso24_rutschgebiete_rutschungpos.sql','av_avdpool_ng.rutschgebiete_rutschungpos', true),
+            new TransferSet('agi_dm01avso24_tseinteilung_toleranzstufe.sql','av_avdpool_ng.tseinteilung_toleranzstufe', true),
+            new TransferSet('agi_dm01avso24_tseinteilung_toleranzstufepos.sql','av_avdpool_ng.tseinteilung_toleranzstufepos', true)
+  ]
 }
 
