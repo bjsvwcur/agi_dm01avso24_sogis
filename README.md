@@ -3,7 +3,7 @@ Create Schema und Import Daten der AV
 
 Git clonen:
 ```
-  git clone https://github.com/bjsvwcur/arp_nutzungsvereinbarung.git
+  git clone https://github.com/bjsvwcur/agi_av_avdpool_ng_sogis.git
 ```
 
 Docker Container erstellen mit 2 PostgreSQL DBs edit und Pub. Inkl. Schema agi_dm01avso24_sogis in beiden DBs.
